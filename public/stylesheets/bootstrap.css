@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap
@@ -10,6 +11,35 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* 設定間隔 */
+}
+
+.flex-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+}
+
+.box-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.box-content {
+  flex-grow: 1;
+  /* 填充空白 */
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
 
 :root {
   --bs-blue: #0d6efd;
@@ -3304,7 +3334,7 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-  --bs-btn-color: #000;
+  --bs-btn-color: white;
   --bs-btn-bg: #24069e;
   --bs-btn-border-color: #24069e;
   --bs-btn-hover-color: #000;
@@ -3442,8 +3472,8 @@ fieldset:disabled .btn {
 .btn-outline-primary {
   --bs-btn-color: #24069e;
   --bs-btn-border-color: #24069e;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #24069e;
+  --bs-btn-hover-color:#fff;
+  --bs-btn-hover-bg: #2d54c8b5;
   --bs-btn-hover-border-color: #24069e;
   --bs-btn-focus-shadow-rgb: 189, 93, 56;
   --bs-btn-active-color: #000;
@@ -4823,6 +4853,7 @@ fieldset:disabled .btn {
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
+  font-size: 150%;
 }
 
 .card-subtitle {
